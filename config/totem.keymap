@@ -3,7 +3,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 &mt {
-    require-prior-idle-ms = <200>;
+    require-prior-idle-ms = <250>;
     flavor = "balanced";
 };
 
