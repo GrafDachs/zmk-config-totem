@@ -70,7 +70,7 @@
 
         symbols {
             bindings = <
-                 &kp PLUS        &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans             &kp N7        &kp N8        &kp EQUAL     &kp EQUAL
+                 &kp PLUS        &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans             &kp N7        &kp N8        &kp NUMBER_9  &kp EQUAL
                  &kp UNDERSCORE  &kp DOLLAR       &kp PERCENT   &kp CARET             &kp LEFT_BRACE           &kp RIGHT_BRACE    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
 &mt TILDE GRAVE  &trans          &kp EXCLAMATION  &kp AT_SIGN   &kp POUND             &kp LEFT_BRACKET         &kp RIGHT_BRACKET  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0     &mt BACKSLASH PIPE
                                                   &trans        &trans                &trans                   &trans             &trans        &trans
