@@ -40,7 +40,7 @@
         };
 
         Semi {
-            bindings = <&mt COLON SEMICOLON>;
+            bindings = <&kp SEMICOLON>;
             key-positions = <9 8>;
             timeout-ms = <40>;
             layers = <0>;
