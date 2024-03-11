@@ -3,8 +3,9 @@
 #include <dt-bindings/zmk/keys.h>
 
 &mt {
-    require-prior-idle-ms = <250>;
-    flavor = "balanced";
+    tapping-term-ms = <175>
+    require-prior-idle-ms = <100>;
+    flavor = "tap-preferred"
 };
 
 / {
