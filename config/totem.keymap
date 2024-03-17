@@ -80,9 +80,9 @@
 
         func {
             bindings = <
-        &bt BT_CLR         &bt BT_SEL 0  &trans               &trans           &trans    &trans  &trans           &kp PRINTSCREEN  &trans  &trans
-        &kp F1             &kp F2        &mt LEFT_CONTROL F3  &mt LEFT_ALT F4  &kp F5    &kp F6  &mt LEFT_ALT F7  &mt LCTRL F8     &kp F9  &kp F10
-&trans  &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp K_MUTE           &kp LGUI         &trans    &trans  &kp LEFT_GUI     &trans           &trans  &trans   &trans
+        &bt BT_CLR         &bt BT_SEL 0  &trans               &trans           &trans    &trans  &trans           &kp PRINTSCREEN  &kp F11	&kp F12
+        &kp F1             &kp F2        &mt LEFT_CONTROL F3  &mt LEFT_ALT F4  &kp F5    &kp F6  &mt LEFT_ALT F7  &mt LCTRL F8     &kp F9  	&kp F10
+&trans  &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp K_MUTE           &kp LGUI         &trans    &trans  &kp LEFT_GUI     &trans           &trans  	&trans   &trans
                                          &trans               &trans           &trans    &trans  &trans           &trans
             >;
         };
