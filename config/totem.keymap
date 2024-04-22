@@ -15,35 +15,35 @@
         AE {
             bindings = <&kp RA(Q)>;
             key-positions = <0 1>;
-            timeout-ms = <40>;
+            timeout-ms = <25>;
             layers = <0>;
         };
 
         OE {
             bindings = <&kp RA(P)>;
             key-positions = <2 3>;
-            timeout-ms = <40>;
+            timeout-ms = <25>;
             layers = <0>;
         };
 
         SZ {
             bindings = <&kp RA(S)>;
             key-positions = <11 12>;
-            timeout-ms = <40>;
+            timeout-ms = <25>;
             layers = <0>;
         };
 
         UE {
             bindings = <&kp RA(Y)>;
             key-positions = <7 8>;
-            timeout-ms = <40>;
+            timeout-ms = <25>;
             layers = <0>;
         };
 
         Semi {
             bindings = <&kp SEMICOLON>;
             key-positions = <9 8>;
-            timeout-ms = <40>;
+            timeout-ms = <25>;
             layers = <0>;
         };
     };
