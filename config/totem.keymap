@@ -65,12 +65,12 @@
             >;
         };
         
-         canary {
+         apt {
             bindings = <
-          &kp W  &kp L  &kp Y               &kp P           &kp B         &kp Z      &kp F           &kp O               &kp U    &kp APOS
-          &kp C  &kp R  &mt LEFT_CONTROL S  &mt LEFT_ALT T  &kp G         &kp M      &mt LEFT_ALT N  &mt LEFT_CONTROL E  &kp I    &kp A
-&kp BSPC  &kp Q  &kp J  &kp V               &mt LEFT_GUI D  &kp K         &kp X      &mt LEFT_GUI H  &kp COMMA           &kp DOT  &kp FSLH  &kp ENTER
-                        &mo 4               &mo 3           &kp LSHIFT    &kp SPACE  &mo 2           &mo 4
+          &kp W  &kp G  &kp D               &kp F           &kp B         &kp Q      &kp L              &kp U               &kp O    &kp Y
+          &kp R  &kp S  &mt LEFT_CONTROL T  &mt LEFT_ALT H  &kp K         &kp J      &mt LEFT_ALT N     &mt LEFT_CONTROL E  &kp A    &kp I
+&kp BSPC  &kp X  &kp C  &kp M               &mt LEFT_GUI P  &kp V         &kp Z      &mt LEFT_GUI COMMA &kp DOT             &kp APO  &kp FSLH  &kp ENTER
+                        &mo 4               &mo 3           &kp LSHIFT    &kp SPACE  &mo 2              &mo 4
             >;
         };
 
