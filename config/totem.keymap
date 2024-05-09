@@ -61,7 +61,7 @@
 
         OE {
             bindings = <&kp RA(P)>;
-            key-positions = <8 17>;
+            key-positions = <8 9>;
             timeout-ms = <25>;
             layers = <1>;
         };
