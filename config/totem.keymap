@@ -12,14 +12,14 @@
     combos {
         compatible = "zmk,combos";
 
-        AE {
+        AE-col {
             bindings = <&kp RA(Q)>;
             key-positions = <0 1>;
             timeout-ms = <25>;
             layers = <0>;
         };
 
-        OE {
+        OE-col {
             bindings = <&kp RA(P)>;
             key-positions = <2 3>;
             timeout-ms = <25>;
@@ -30,17 +30,17 @@
             bindings = <&kp RA(S)>;
             key-positions = <11 12>;
             timeout-ms = <25>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         UE {
             bindings = <&kp RA(Y)>;
             key-positions = <7 8>;
             timeout-ms = <25>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
-        Semi {
+        Semi-col {
             bindings = <&kp SEMICOLON>;
             key-positions = <9 8>;
             timeout-ms = <25>;
@@ -50,6 +50,27 @@
         sw-layout {
             bindings = <&tog 1>;
             key-positions = <20 31>;
+        };
+
+        AE {
+            bindings = <&kp RA(Q)>;
+            key-positions = <17 18>;
+            timeout-ms = <25>;
+            layers = <1>;
+        };
+
+        OE {
+            bindings = <&kp RA(P)>;
+            key-positions = <8 17>;
+            timeout-ms = <25>;
+            layers = <1>;
+        };
+
+        Semi {
+            bindings = <&kp SEMICOLON>;
+            key-positions = <27 28>;
+            timeout-ms = <25>;
+            layers = <1>;
         };
     };
 
@@ -64,13 +85,13 @@
                         &mo 4               &mo 3           &kp LSHIFT    &kp SPACE  &mo 2           &mo 4
             >;
         };
-        
-         apt {
+
+        apt {
             bindings = <
-          &kp W  &kp G  &kp D               &kp F           &kp B         &kp Q      &kp L              &kp U               &kp O    &kp Y
-          &kp R  &kp S  &mt LEFT_CONTROL T  &mt LEFT_ALT H  &kp K         &kp J      &mt LEFT_ALT N     &mt LEFT_CONTROL E  &kp A    &kp I
-&kp BSPC  &kp X  &kp C  &kp M               &mt LEFT_GUI P  &kp V         &kp Z      &mt LEFT_GUI COMMA &kp DOT             &kp APOS &kp FSLH  &kp ENTER
-                        &mo 4               &mo 3           &kp LSHIFT    &kp SPACE  &mo 2              &mo 4
+          &kp W  &kp G  &kp D               &kp F           &kp B         &kp Q      &kp L               &kp U               &kp O     &kp Y
+          &kp R  &kp S  &mt LEFT_CONTROL T  &mt LEFT_ALT H  &kp K         &kp J      &mt LEFT_ALT N      &mt LEFT_CONTROL E  &kp A     &kp I
+&kp BSPC  &kp X  &kp C  &kp M               &mt LEFT_GUI P  &kp V         &kp Z      &mt LEFT_GUI COMMA  &kp DOT             &kp APOS  &kp FSLH  &kp ENTER
+                        &mo 4               &mo 3           &kp LSHIFT    &kp SPACE  &mo 2               &mo 4
             >;
         };
 
@@ -102,4 +123,3 @@
         };
     };
 };
-
