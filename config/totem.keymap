@@ -8,6 +8,11 @@
     flavor = "tap-preferred";
 };
 
+&lt {
+    tapping-term-ms = <190>;
+    flavor = "hold-preferred";
+};
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -16,39 +21,39 @@
             bindings = <&kp RA(Q)>;
             key-positions = <0 1>;
             timeout-ms = <25>;
-            layers = <0>;
+            layers = <1>;
         };
 
         OE-col {
             bindings = <&kp RA(P)>;
             key-positions = <2 3>;
             timeout-ms = <25>;
-            layers = <0>;
+            layers = <1>;
         };
 
         SZ {
             bindings = <&kp RA(S)>;
             key-positions = <11 12>;
             timeout-ms = <25>;
-            layers = <0 1>;
+            layers = <1 0>;
         };
 
         UE {
             bindings = <&kp RA(Y)>;
             key-positions = <7 8>;
             timeout-ms = <25>;
-            layers = <0 1>;
+            layers = <1 0>;
         };
 
         Semi-col {
             bindings = <&kp SEMICOLON>;
             key-positions = <9 8>;
             timeout-ms = <25>;
-            layers = <0>;
+            layers = <1>;
         };
 
         sw-layout {
-            bindings = <&tog 1>;
+            bindings = <&tog 0>;
             key-positions = <20 31>;
         };
 
@@ -56,26 +61,46 @@
             bindings = <&kp RA(Q)>;
             key-positions = <17 18>;
             timeout-ms = <25>;
-            layers = <1>;
+            layers = <0>;
         };
 
         OE {
             bindings = <&kp RA(P)>;
             key-positions = <8 9>;
             timeout-ms = <25>;
-            layers = <1>;
+            layers = <0>;
         };
 
         Semi {
             bindings = <&kp SEMICOLON>;
             key-positions = <27 28>;
             timeout-ms = <25>;
-            layers = <1>;
+            layers = <0>;
+        };
+    };
+
+    behaviors {
+        mt_hp: mt_hp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_HoldPreferred";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <190>;
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
+
+        apt {
+            bindings = <
+        &kp W  &kp G  &kp D               &kp F           &kp B                          &kp Q      &kp L               &kp U               &kp O     &kp Y
+        &kp R  &kp S  &mt LEFT_CONTROL T  &mt LEFT_ALT H  &kp K                          &kp J      &mt LEFT_ALT N      &mt LEFT_CONTROL E  &kp A     &kp I
+&trans  &kp X  &kp C  &kp M               &mt LEFT_GUI P  &kp V                          &kp Z      &mt LEFT_GUI COMMA  &kp DOT             &kp APOS  &kp FSLH  &trans
+                      &mo 4               &mo 2           &mt_hp LEFT_SHIFT BACKSPACE    &kp SPACE  &lt 3 ENTER         &mo 4
+            >;
+        };
 
         colemak {
             bindings = <
@@ -83,15 +108,6 @@
           &kp A  &kp R  &mt LEFT_CONTROL S  &mt LEFT_ALT T  &kp G         &kp M      &mt LEFT_ALT N  &mt LEFT_CONTROL E  &kp I    &kp O
 &kp BSPC  &kp Z  &kp X  &kp C               &mt LEFT_GUI D  &kp V         &kp K      &mt LEFT_GUI H  &kp COMMA           &kp DOT  &kp FSLH  &kp ENTER
                         &mo 4               &mo 3           &kp LSHIFT    &kp SPACE  &mo 2           &mo 4
-            >;
-        };
-
-        apt {
-            bindings = <
-          &kp W  &kp G  &kp D               &kp F           &kp B         &kp Q      &kp L               &kp U               &kp O     &kp Y
-          &kp R  &kp S  &mt LEFT_CONTROL T  &mt LEFT_ALT H  &kp K         &kp J      &mt LEFT_ALT N      &mt LEFT_CONTROL E  &kp A     &kp I
-&kp BSPC  &kp X  &kp C  &kp M               &mt LEFT_GUI P  &kp V         &kp Z      &mt LEFT_GUI COMMA  &kp DOT             &kp APOS  &kp FSLH  &kp ENTER
-                        &mo 4               &mo 3           &kp LSHIFT    &kp SPACE  &mo 2               &mo 4
             >;
         };
 
@@ -106,20 +122,21 @@
 
         symbols {
             bindings = <
-                 &kp PLUS        &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans             &kp N7        &kp N8        &kp NUMBER_9  &kp EQUAL
-                 &kp UNDERSCORE  &kp DOLLAR       &kp PERCENT   &kp CARET             &kp LEFT_BRACE           &kp RIGHT_BRACE    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
-&mt TILDE GRAVE  &trans          &kp EXCLAMATION  &kp AT_SIGN   &kp POUND             &kp LEFT_BRACKET         &kp RIGHT_BRACKET  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0     &mt BACKSLASH PIPE
-                                                  &trans        &trans                &trans                   &trans             &trans        &trans
+        &kp EXCL     &kp AT      &kp LBKT  &kp RBKT  &kp STAR     &mt TILDE GRAVE  &kp N7  &kp N8        &kp N9        &kp EQUAL
+        &kp HASH     &kp DOLLAR  &kp LPAR  &kp RPAR  &kp UNDER    &kp PLUS         &kp N4  &kp N5        &kp N6        &kp MINUS
+&trans  &kp PERCENT  &kp CARET   &kp LBRC  &kp RBRC  &kp AMPS     &mt BSLH PIPE    &kp N1  &kp NUMBER_2  &kp NUMBER_3  &kp N0     &trans
+                                 &trans    &trans    &trans       &trans           &trans  &trans
             >;
         };
 
         func {
             bindings = <
-        &bt BT_CLR         &bt BT_SEL 0  &trans               &trans           &trans    &trans  &trans           &kp PRINTSCREEN  &kp F11  &kp F12
-        &kp F1             &kp F2        &mt LEFT_CONTROL F3  &mt LEFT_ALT F4  &kp F5    &kp F6  &mt LEFT_ALT F7  &mt LCTRL F8     &kp F9   &kp F10
-&trans  &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp K_MUTE           &kp LGUI         &trans    &trans  &kp LEFT_GUI     &trans           &trans   &trans   &trans
-                                         &trans               &trans           &trans    &trans  &trans           &trans
+        &bt BT_CLR    &bt BT_SEL 0  &trans               &trans           &trans    &trans  &trans           &kp PRINTSCREEN  &kp F11  &kp F12
+        &kp F1        &kp F2        &mt LEFT_CONTROL F3  &mt LEFT_ALT F4  &trans    &trans  &mt LEFT_ALT F7  &mt LCTRL F8     &kp F9   &kp F10
+&trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_MUTE           &mt LGUI F5      &trans    &trans  &mt RGUI F6      &trans           &trans   &trans   &trans
+                                    &trans               &trans           &trans    &trans  &trans           &trans
             >;
         };
     };
 };
+
