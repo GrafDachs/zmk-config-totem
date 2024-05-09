@@ -8,11 +8,6 @@
     flavor = "tap-preferred";
 };
 
-&lt {
-    tapping-term-ms = <190>;
-    flavor = "hold-preferred";
-};
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -79,26 +74,15 @@
         };
     };
 
-    behaviors {
-        mt_hp: mt_hp {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MT_HoldPreferred";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <190>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
         apt {
             bindings = <
-        &kp W  &kp G  &kp D               &kp F           &kp B                          &kp Q      &kp L               &kp U               &kp O     &kp Y
-        &kp R  &kp S  &mt LEFT_CONTROL T  &mt LEFT_ALT H  &kp K                          &kp J      &mt LEFT_ALT N      &mt LEFT_CONTROL E  &kp A     &kp I
-&trans  &kp X  &kp C  &kp M               &mt LEFT_GUI P  &kp V                          &kp Z      &mt LEFT_GUI COMMA  &kp DOT             &kp APOS  &kp FSLH  &trans
-                      &mo 4               &mo 2           &mt_hp LEFT_SHIFT BACKSPACE    &kp SPACE  &lt 3 ENTER         &mo 4
+               &kp W  &kp G  &kp D               &kp F           &kp B         &kp Q      &kp L               &kp U               &kp O     &kp Y
+               &kp R  &kp S  &mt LEFT_CONTROL T  &mt LEFT_ALT H  &kp K         &kp J      &mt LEFT_ALT N      &mt LEFT_CONTROL E  &kp A     &kp I
+&kp BACKSPACE  &kp X  &kp C  &kp M               &mt LEFT_GUI P  &kp V         &kp Z      &mt LEFT_GUI COMMA  &kp DOT             &kp APOS  &kp FSLH  &kp ENTER
+                             &mo 4               &mo 3           &kp LSHIFT    &kp SPACE  &mo 2               &mo 4
             >;
         };
 
