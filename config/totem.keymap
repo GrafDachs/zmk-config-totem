@@ -48,7 +48,7 @@
         };
 
         sw-layout {
-            bindings = <&tog 0>;
+            bindings = <&tog 1>;
             key-positions = <20 31>;
         };
 
