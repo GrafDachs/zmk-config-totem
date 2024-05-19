@@ -70,7 +70,7 @@
         game_ext {
             bindings = <&mo 5>;
             key-positions = <33 34>;
-            layers = <5>;
+            layers = <4>;
             slow-release;
         };
 
