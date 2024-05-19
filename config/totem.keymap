@@ -77,7 +77,7 @@
         &kp W  &kp G  &kp D               &kp F           &kp B                 &kp Q      &kp L               &kp U               &kp O     &kp Y
         &kp R  &kp S  &mt LEFT_CONTROL T  &mt LEFT_ALT H  &kp K                 &kp J      &mt LEFT_ALT N      &mt LEFT_CONTROL E  &kp A     &kp I
 &trans  &kp X  &kp C  &kp M               &mt LEFT_GUI P  &kp V                 &kp Z      &mt LEFT_GUI COMMA  &kp DOT             &kp APOS  &kp FSLH  &trans
-                      &trans              &lhy 1 1        &mt_hp LSHIFT BSPC    &kp SPACE  &lhy 2 2            &trans
+                      &mo 3               &lhy 1 1        &mt_hp LSHIFT BSPC    &kp SPACE  &lhy 2 2            &mo 3
             >;
         };
 
@@ -86,7 +86,7 @@
         &kp HASH     &kp DOLLAR  &kp LBKT  &kp RBKT  &kp STAR     &mt TILDE GRAVE  &kp N7  &kp N8        &kp N9        &kp EQUAL
         &kp EXCL     &kp AT      &kp LPAR  &kp RPAR  &kp UNDER    &kp PLUS         &kp N4  &kp N5        &kp N6        &kp MINUS
 &trans  &kp PERCENT  &kp CARET   &kp LBRC  &kp RBRC  &kp AMPS     &mt BSLH PIPE    &kp N1  &kp NUMBER_2  &kp NUMBER_3  &kp N0     &trans
-                                 &trans    &tog 1    &trans       &trans           &mo 3   &trans
+                                 &trans    &tog 1    &trans       &trans           &trans  &trans
             >;
         };
 
@@ -95,7 +95,7 @@
         &trans   &trans   &trans            &trans             &trans    &trans     &kp HOME  &kp END   &trans  &kp DEL
         &kp ESC  &kp TAB  &kp LEFT_CONTROL  &mt_hp LALT ENTER  &trans    &kp PG_UP  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
 &trans  &trans   &trans   &trans            &kp LEFT_GUI       &trans    &kp PG_DN  &trans    &trans    &trans  &trans     &trans
-                          &trans            &mo 3              &trans    &trans     &tog 2    &trans
+                          &trans            &trans             &trans    &trans     &tog 2    &trans
             >;
         };
 
