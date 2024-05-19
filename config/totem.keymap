@@ -12,44 +12,24 @@
     combos {
         compatible = "zmk,combos";
 
-        AE-col {
-            bindings = <&kp RA(Q)>;
-            key-positions = <0 1>;
-            timeout-ms = <25>;
-            layers = <1>;
-        };
-
-        OE-col {
-            bindings = <&kp RA(P)>;
-            key-positions = <2 3>;
-            timeout-ms = <25>;
-            layers = <1>;
-        };
-
         SZ {
             bindings = <&kp RA(S)>;
             key-positions = <11 12>;
             timeout-ms = <25>;
-            layers = <1 0>;
+            layers = <0>;
         };
 
         UE {
             bindings = <&kp RA(Y)>;
             key-positions = <7 8>;
             timeout-ms = <25>;
-            layers = <1 0>;
-        };
-
-        Semi-col {
-            bindings = <&kp SEMICOLON>;
-            key-positions = <9 8>;
-            timeout-ms = <25>;
-            layers = <1>;
+            layers = <0>;
         };
 
         sw-layout {
-            bindings = <&tog 1>;
+            bindings = <&tog 4>;
             key-positions = <20 31>;
+            layers = <4 0>;
         };
 
         AE {
@@ -90,28 +70,10 @@
 
         apt {
             bindings = <
-               &kp W  &kp G  &kp D               &kp F           &kp B         &kp Q      &kp L               &kp U               &kp O     &kp Y
-               &kp R  &kp S  &mt LEFT_CONTROL T  &mt LEFT_ALT H  &kp K         &kp J      &mt LEFT_ALT N      &mt LEFT_CONTROL E  &kp A     &kp I
-&kp BACKSPACE  &kp X  &kp C  &kp M               &mt LEFT_GUI P  &kp V         &kp Z      &mt LEFT_GUI COMMA  &kp DOT             &kp APOS  &kp FSLH  &kp ENTER
-                             &mo 4               &lhy 3 3        &kp LSHIFT    &kp SPACE  &lhy 2 2            &mo 4
-            >;
-        };
-
-        colemak {
-            bindings = <
-          &kp Q  &kp W  &kp F               &kp P           &kp B         &kp J      &kp L           &kp U               &kp Y    &kp APOS
-          &kp A  &kp R  &mt LEFT_CONTROL S  &mt LEFT_ALT T  &kp G         &kp M      &mt LEFT_ALT N  &mt LEFT_CONTROL E  &kp I    &kp O
-&kp BSPC  &kp Z  &kp X  &kp C               &mt LEFT_GUI D  &kp V         &kp K      &mt LEFT_GUI H  &kp COMMA           &kp DOT  &kp FSLH  &kp ENTER
-                        &mo 4               &mo 3           &kp LSHIFT    &kp SPACE  &mo 2           &mo 4
-            >;
-        };
-
-        nav {
-            bindings = <
-        &trans   &trans   &trans            &trans        &trans    &trans     &kp HOME  &kp END   &trans  &kp DEL
-        &kp ESC  &kp TAB  &kp LEFT_CONTROL  &kp LEFT_ALT  &trans    &kp PG_UP  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
-&trans  &trans   &trans   &trans            &kp LEFT_GUI  &trans    &kp PG_DN  &trans    &trans    &trans  &trans     &trans
-                          &trans            &trans        &trans    &trans     &tog 2    &trans
+        &kp W  &kp G  &kp D               &kp F           &kp B         &kp Q      &kp L               &kp U               &kp O     &kp Y
+        &kp R  &kp S  &mt LEFT_CONTROL T  &mt LEFT_ALT H  &kp K         &kp J      &mt LEFT_ALT N      &mt LEFT_CONTROL E  &kp A     &kp I
+&trans  &kp X  &kp C  &kp M               &mt LEFT_GUI P  &kp V         &kp Z      &mt LEFT_GUI COMMA  &kp DOT             &kp APOS  &kp FSLH  &trans
+                      &mo 3               &lhy 1 1        &kp LSHIFT    &kp SPACE  &lhy 2 2            &mo 3
             >;
         };
 
@@ -120,7 +82,16 @@
         &kp HASH     &kp DOLLAR  &kp LBKT  &kp RBKT  &kp STAR     &mt TILDE GRAVE  &kp N7  &kp N8        &kp N9        &kp EQUAL
         &kp EXCL     &kp AT      &kp LPAR  &kp RPAR  &kp UNDER    &kp PLUS         &kp N4  &kp N5        &kp N6        &kp MINUS
 &trans  &kp PERCENT  &kp CARET   &kp LBRC  &kp RBRC  &kp AMPS     &mt BSLH PIPE    &kp N1  &kp NUMBER_2  &kp NUMBER_3  &kp N0     &trans
-                                 &trans    &tog 3    &trans       &trans           &trans  &trans
+                                 &trans    &tog 1    &trans       &trans           &trans  &trans
+            >;
+        };
+
+        nav {
+            bindings = <
+        &trans   &trans   &trans            &trans         &trans       &trans     &kp HOME  &kp END   &trans  &kp DEL
+        &kp ESC  &kp TAB  &kp LEFT_CONTROL  &kp LEFT_ALT   &trans       &kp PG_UP  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
+&trans  &trans   &trans   &trans            &kp LEFT_GUI   &trans       &kp PG_DN  &trans    &trans    &trans  &trans     &trans
+                          &trans            &kp BACKSPACE  &kp ENTER    &trans     &tog 2    &trans
             >;
         };
 
@@ -130,6 +101,24 @@
         &kp F1        &kp F2        &mt LEFT_CONTROL F3  &mt LEFT_ALT F4  &trans    &trans  &mt LEFT_ALT F7  &mt LCTRL F8     &kp F9   &kp F10
 &trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_MUTE           &mt LGUI F5      &trans    &trans  &mt RGUI F6      &trans           &trans   &trans   &trans
                                     &trans               &trans           &trans    &trans  &trans           &trans
+            >;
+        };
+
+        game_base {
+            bindings = <
+            &kp N1  &kp N2  &kp N3  &kp N4     &kp N5       &none  &none  &none  &none  &none
+            &kp Q   &kp A   &kp W   &kp D      &kp E        &none  &none  &none  &none  &none
+&kp LSHIFT  &kp X   &kp C   &kp S   &kp R      &kp F        &none  &none  &none  &none  &none  &none
+                            &mo 5   &kp LCTRL  &kp SPACE    &none  &none  &none
+            >;
+        };
+
+        game_ext {
+            bindings = <
+         &kp N6   &kp N7  &kp N8  &kp N9  &kp N0    &trans  &trans  &trans  &trans  &trans
+         &kp TAB  &trans  &trans  &trans  &kp T     &trans  &trans  &trans  &trans  &trans
+&kp ESC  &kp Z    &kp G   &trans  &kp V   &kp Y     &trans  &trans  &trans  &trans  &trans  &trans
+                          &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
