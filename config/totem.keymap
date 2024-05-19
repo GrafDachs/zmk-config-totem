@@ -49,7 +49,7 @@
 
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <16 17 18>;
+            key-positions = <17 18 19>;
         };
     };
 
