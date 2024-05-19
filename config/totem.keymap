@@ -100,7 +100,7 @@
         &trans   &trans   &trans            &trans         &trans                 &trans     &kp HOME  &kp END   &trans  &kp DEL
         &kp ESC  &kp TAB  &kp LEFT_CONTROL  &kp LEFT_ALT   &trans                 &kp PG_UP  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
 &trans  &trans   &trans   &trans            &kp LEFT_GUI   &trans                 &kp PG_DN  &trans    &trans    &trans  &trans     &trans
-                          &trans            &kp BACKSPACE  &mt_hp LSHIFT ENTER    &trans     &tog 2    &trans
+                          &trans            &kp ENTER      &mt_hp LSHIFT BSPC     &trans     &tog 2    &trans
             >;
         };
 
