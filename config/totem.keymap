@@ -116,8 +116,8 @@
         game_base {
             bindings = <
             &kp N1  &kp N2  &kp N3  &kp N4     &kp N5       &none  &none  &none  &none  &none
-            &kp Q   &kp A   &kp W   &kp D      &kp E        &none  &none  &none  &none  &none
-&kp LSHIFT  &kp X   &kp C   &kp S   &kp R      &kp F        &none  &none  &none  &none  &none  &none
+            &kp Q   &kp A   &kp W   &kp D      &kp R        &none  &none  &none  &none  &none
+&kp LSHIFT  &kp X   &kp C   &kp S   &kp E      &kp F        &none  &none  &none  &none  &none  &none
                             &mo 5   &kp LCTRL  &kp SPACE    &none  &none  &none
             >;
         };
