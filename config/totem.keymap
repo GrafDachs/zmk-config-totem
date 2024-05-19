@@ -52,6 +52,27 @@
             timeout-ms = <25>;
             layers = <0>;
         };
+
+        func_1 {
+            bindings = <&mo 3>;
+            key-positions = <33 34>;
+            slow-release;
+            layers = <0>;
+        };
+
+        func_2 {
+            bindings = <&mo 3>;
+            key-positions = <36 35>;
+            slow-release;
+            layers = <0>;
+        };
+
+        game_ext {
+            bindings = <&mo 5>;
+            key-positions = <33 34>;
+            layers = <5>;
+            slow-release;
+        };
     };
 
     behaviors {
@@ -82,7 +103,7 @@
         &kp W  &kp G  &kp D               &kp F           &kp B                 &kp Q      &kp L               &kp U               &kp O     &kp Y
         &kp R  &kp S  &mt LEFT_CONTROL T  &mt LEFT_ALT H  &kp K                 &kp J      &mt LEFT_ALT N      &mt LEFT_CONTROL E  &kp A     &kp I
 &trans  &kp X  &kp C  &kp M               &mt LEFT_GUI P  &kp V                 &kp Z      &mt LEFT_GUI COMMA  &kp DOT             &kp APOS  &kp FSLH  &trans
-                      &mo 3               &lhy 1 1        &mt_hp LSHIFT BSPC    &kp SPACE  &lhy 2 2            &mo 3
+                      &trans              &lhy 1 1        &mt_hp LSHIFT BSPC    &kp SPACE  &lhy 2 2            &trans
             >;
         };
 
@@ -118,7 +139,7 @@
             &kp N1  &kp N2  &kp N3  &kp N4     &kp N5       &none  &none  &none  &none  &none
             &kp Q   &kp A   &kp W   &kp D      &kp R        &none  &none  &none  &none  &none
 &kp LSHIFT  &kp X   &kp C   &kp S   &kp E      &kp F        &none  &none  &none  &none  &none  &none
-                            &mo 5   &kp LCTRL  &kp SPACE    &none  &none  &none
+                            &trans  &kp LCTRL  &kp SPACE    &none  &none  &none
             >;
         };
 
