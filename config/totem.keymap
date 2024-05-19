@@ -63,6 +63,15 @@
             #binding-cells = <2>;
             tapping-term-ms = <190>;
         };
+
+        mt_hp: mt_hp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_HoldPreferred";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <190>;
+        };
     };
 
     keymap {
@@ -88,10 +97,10 @@
 
         nav {
             bindings = <
-        &trans   &trans   &trans            &trans         &trans       &trans     &kp HOME  &kp END   &trans  &kp DEL
-        &kp ESC  &kp TAB  &kp LEFT_CONTROL  &kp LEFT_ALT   &trans       &kp PG_UP  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
-&trans  &trans   &trans   &trans            &kp LEFT_GUI   &trans       &kp PG_DN  &trans    &trans    &trans  &trans     &trans
-                          &trans            &kp BACKSPACE  &kp ENTER    &trans     &tog 2    &trans
+        &trans   &trans   &trans            &trans         &trans                 &trans     &kp HOME  &kp END   &trans  &kp DEL
+        &kp ESC  &kp TAB  &kp LEFT_CONTROL  &kp LEFT_ALT   &trans                 &kp PG_UP  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
+&trans  &trans   &trans   &trans            &kp LEFT_GUI   &trans                 &kp PG_DN  &trans    &trans    &trans  &trans     &trans
+                          &trans            &kp BACKSPACE  &mt_hp LSHIFT ENTER    &trans     &tog 2    &trans
             >;
         };
 
