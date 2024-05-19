@@ -73,6 +73,18 @@
             layers = <5>;
             slow-release;
         };
+
+        game_tab {
+            bindings = <&kp TAB>;
+            key-positions = <0 1>;
+            layers = <4>;
+        };
+
+        game_esc {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+            layers = <5>;
+        };
     };
 
     behaviors {
@@ -136,19 +148,19 @@
 
         game_base {
             bindings = <
-            &kp N1  &kp N2  &kp N3  &kp N4     &kp N5       &none  &none  &none  &none  &none
-            &kp Q   &kp A   &kp W   &kp D      &kp R        &none  &none  &none  &none  &none
-&kp LSHIFT  &kp X   &kp C   &kp S   &kp E      &kp F        &none  &none  &none  &none  &none  &none
+        &kp N1      &kp N2  &kp N3  &kp N4     &kp N5       &none  &none  &none  &none  &none
+        &kp LSHIFT  &kp A   &kp W   &kp D      &kp R        &none  &none  &none  &none  &none
+&trans  &kp X       &kp C   &kp S   &kp E      &kp F        &none  &none  &none  &none  &none  &none
                             &trans  &kp LCTRL  &kp SPACE    &none  &none  &none
             >;
         };
 
         game_ext {
             bindings = <
-         &kp N6   &kp N7  &kp N8  &kp N9  &kp N0    &trans  &trans  &trans  &trans  &trans
-         &kp TAB  &trans  &trans  &trans  &kp T     &trans  &trans  &trans  &trans  &trans
-&kp ESC  &kp Z    &kp G   &trans  &kp V   &kp Y     &trans  &trans  &trans  &trans  &trans  &trans
-                          &trans  &trans  &trans    &trans  &trans  &trans
+        &kp N6  &kp N7  &kp N8  &kp N9  &kp N0    &trans  &trans  &trans  &trans  &trans
+        &kp Q   &trans  &trans  &trans  &kp T     &trans  &trans  &trans  &trans  &trans
+&trans  &kp Z   &kp G   &trans  &kp V   &kp Y     &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
