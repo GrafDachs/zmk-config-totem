@@ -83,10 +83,10 @@
 
         symbols {
             bindings = <
-        &kp HASH     &kp DOLLAR  &kp LBKT  &kp RBKT  &kp STAR     &mt TILDE GRAVE  &kp N7  &kp N8        &kp N9        &kp EQUAL
-        &kp EXCL     &kp AT      &kp LPAR  &kp RPAR  &kp UNDER    &kp PLUS         &kp N4  &kp N5        &kp N6        &kp MINUS
-&trans  &kp PERCENT  &kp CARET   &kp LBRC  &kp RBRC  &kp AMPS     &mt BSLH PIPE    &kp N1  &kp NUMBER_2  &kp NUMBER_3  &kp N0     &trans
-                                 &trans    &tog 1    &trans       &trans           &trans  &trans
+        &kp EXCL   &kp AT     &kp HASH  &kp DOLLAR  &kp PERCENT       &kp CARET      &kp AMPERSAND  &kp ASTRK  &kp RPAR  &kp LPAR
+        &kp N1     &kp N2     &kp N3    &kp N4      &kp LBKT          &kp RBKT       &kp N7         &kp N8     &kp N9    &kp N0
+&trans  &kp MINUS  &kp EQUAL  &kp PLUS  &kp N5      &mt BSLH GRAVE    &mt BSLH PIPE  &kp N6         &kp UNDER  &kp RBRC  &kp LBRC  &trans
+                              &trans    &tog 1      &trans            &trans         &trans         &trans
             >;
         };
 
