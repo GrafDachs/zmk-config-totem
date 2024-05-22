@@ -49,15 +49,6 @@
     };
 
     behaviors {
-        lhy: lhy {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_HYBRID";
-            bindings = <&mo>, <&to>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <190>;
-        };
-
         mt_hp: mt_hp {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_HoldPreferred";
@@ -77,25 +68,25 @@
         &kp W  &kp G  &kp D               &kp F           &kp B                 &kp Q      &kp L               &kp U               &kp O     &kp Y
         &kp R  &kp S  &mt LEFT_CONTROL T  &mt LEFT_ALT H  &kp K                 &kp J      &mt LEFT_ALT N      &mt LEFT_CONTROL E  &kp A     &kp I
 &trans  &kp X  &kp C  &kp M               &mt LEFT_GUI P  &kp V                 &kp Z      &mt LEFT_GUI COMMA  &kp DOT             &kp APOS  &kp FSLH  &trans
-                      &mo 3               &lhy 1 1        &mt_hp LSHIFT BSPC    &kp SPACE  &lhy 2 2            &mo 3
+                      &mo 3               &mo 1           &mt_hp LSHIFT BSPC    &kp SPACE  &lt 2 ENTER         &mo 3
             >;
         };
 
         symbols {
             bindings = <
-        &kp EXCL   &kp AT     &kp HASH  &kp DOLLAR  &kp PERCENT       &kp CARET      &kp AMPERSAND  &kp ASTRK  &kp RPAR  &kp LPAR
-        &kp N1     &kp N2     &kp N3    &kp N4      &kp LBKT          &kp RBKT       &kp N7         &kp N8     &kp N9    &kp N0
-&trans  &kp MINUS  &kp EQUAL  &kp PLUS  &kp N5      &mt BSLH GRAVE    &mt BSLH PIPE  &kp N6         &kp UNDER  &kp RBRC  &kp LBRC  &trans
-                              &trans    &tog 1      &trans            &trans         &trans         &trans
+        &kp DOLLAR  &kp HASH  &kp AT         &kp EXCL  &mt TILDE GRAVE    &mt BSLH PIPE  &kp RPAR  &kp LPAR   &kp RBRC   &kp LBRC
+        &kp N1      &kp N2    &kp N3         &kp N4    &kp LBKT           &kp RBKT       &kp N7    &kp N8     &kp N9     &kp N0
+&trans  &kp CARET   &kp STAR  &kp AMPERSAND  &kp N5    &kp PERCENT        &kp PLUS       &kp N6    &kp EQUAL  &kp MINUS  &kp UNDER  &trans
+                              &trans         &tog 1    &trans             &trans         &trans    &trans
             >;
         };
 
         nav {
             bindings = <
-        &trans   &trans   &trans            &trans             &trans    &trans     &kp HOME  &kp END   &trans  &kp DEL
-        &kp ESC  &kp TAB  &kp LEFT_CONTROL  &mt_hp LALT ENTER  &trans    &kp PG_UP  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
-&trans  &trans   &trans   &trans            &kp LEFT_GUI       &trans    &kp PG_DN  &trans    &trans    &trans  &trans     &trans
-                          &trans            &trans             &trans    &trans     &tog 2    &trans
+        &trans   &trans   &trans            &trans        &trans    &trans     &kp HOME  &kp END   &trans  &kp DEL
+        &kp ESC  &kp TAB  &kp LEFT_CONTROL  &kp LALT      &trans    &kp PG_UP  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
+&trans  &trans   &trans   &trans            &kp LEFT_GUI  &trans    &kp PG_DN  &trans    &trans    &trans  &trans     &trans
+                          &trans            &trans        &trans    &trans     &tog 2    &trans
             >;
         };
 
@@ -109,4 +100,3 @@
         };
     };
 };
-
