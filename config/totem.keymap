@@ -68,7 +68,7 @@
         &kp W  &kp G  &kp D               &kp F           &kp B                 &kp Q      &kp L               &kp U               &kp O     &kp Y
         &kp R  &kp S  &mt LEFT_CONTROL T  &mt LEFT_ALT H  &kp K                 &kp J      &mt LEFT_ALT N      &mt LEFT_CONTROL E  &kp A     &kp I
 &trans  &kp X  &kp C  &kp M               &mt LEFT_GUI P  &kp V                 &kp Z      &mt LEFT_GUI COMMA  &kp DOT             &kp APOS  &kp FSLH  &trans
-                      &mo 3               &mo 1           &mt_hp LSHIFT BSPC    &kp SPACE  &lt 2 ENTER         &mo 3
+                      &mo 3               &lt 1 TAB       &mt_hp LSHIFT BSPC    &kp SPACE  &lt 2 ENTER         &mo 3
             >;
         };
 
@@ -83,10 +83,10 @@
 
         nav {
             bindings = <
-        &trans   &trans   &trans            &trans        &trans    &trans     &kp HOME  &kp END   &trans  &kp DEL
-        &kp ESC  &kp TAB  &kp LEFT_CONTROL  &kp LALT      &trans    &kp PG_UP  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
-&trans  &trans   &trans   &trans            &kp LEFT_GUI  &trans    &kp PG_DN  &trans    &trans    &trans  &trans     &trans
-                          &trans            &trans        &trans    &trans     &tog 2    &trans
+        &trans   &trans  &trans            &trans        &trans    &trans     &kp HOME  &kp END   &trans  &kp DEL
+        &kp ESC  &trans  &kp LEFT_CONTROL  &kp LALT      &trans    &kp PG_UP  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
+&trans  &trans   &trans  &trans            &kp LEFT_GUI  &trans    &kp PG_DN  &trans    &trans    &trans  &trans     &trans
+                         &trans            &trans        &trans    &trans     &tog 2    &trans
             >;
         };
 
