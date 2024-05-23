@@ -77,7 +77,7 @@
         &kp DOLLAR       &kp HASH  &kp AT    &kp EXCL  &kp CARET      &kp UNDER  &kp N7    &kp N8    &kp N9         &kp EQUAL
         &kp N0           &kp N1    &kp N2    &kp N3    &kp LBKT       &kp RBKT   &kp N4    &kp N5    &kp N6         &kp MINUS
 &trans  &mt TILDE GRAVE  &kp STAR  &kp LBRC  &kp RBRC  &kp PERCENT    &kp PLUS   &kp RPAR  &kp LPAR  &kp AMPERSAND  &mt BSLH PIPE  &trans
-                                   &trans    &tog 1    &trans         &trans     &trans    &trans
+                                   &trans    &trans    &trans         &trans     &trans    &trans
             >;
         };
 
@@ -86,7 +86,7 @@
         &trans   &trans  &trans            &trans        &trans    &trans     &kp HOME  &kp END   &trans  &kp DEL
         &kp ESC  &trans  &kp LEFT_CONTROL  &kp LALT      &trans    &kp PG_UP  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
 &trans  &trans   &trans  &trans            &kp LEFT_GUI  &trans    &kp PG_DN  &trans    &trans    &trans  &trans     &trans
-                         &trans            &trans        &trans    &trans     &tog 2    &trans
+                         &trans            &trans        &trans    &trans     &trans    &trans
             >;
         };
 
