@@ -58,6 +58,25 @@
             tapping-term-ms = <190>;
             quick-tap-ms = <150>;
         };
+
+        mt_arrow: mt_arrow {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_ARROW";
+            bindings = <&kp>, <&make_arrow>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <190>;
+            flavor = "tap-preferred";
+        };
+    };
+
+    macros {
+        make_arrow: arrow {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &kp GT>;
+            label = "ARROW_SMALL";
+        };
     };
 
     keymap {
@@ -74,9 +93,9 @@
 
         sym {
             bindings = <
-        &kp DOLLAR  &kp HASH         &kp AT    &kp EXCL  &kp STAR       &kp UNDER  &kp N7    &kp N8    &kp N9         &kp EQUAL
-        &kp N0      &kp N1           &kp N2    &kp N3    &kp LBKT       &kp RBKT   &kp N4    &kp N5    &kp N6         &kp MINUS
-&trans  &kp CARET   &mt TILDE GRAVE  &kp LPAR  &kp RPAR  &kp PERCENT    &kp PLUS   &kp RBRC  &kp LBRC  &kp AMPERSAND  &mt BSLH PIPE  &trans
+        &kp DOLLAR  &kp HASH         &kp AT    &kp EXCL  &kp STAR       &kp UNDER  &kp N7    &kp N8    &kp N9         &mt_arrow EQUAL EQUAL
+        &kp N0      &kp N1           &kp N2    &kp N3    &kp LBKT       &kp RBKT   &kp N4    &kp N5    &kp N6         &mt_arrow MINUS MINUS
+&trans  &kp CARET   &mt TILDE GRAVE  &kp LPAR  &kp RPAR  &kp PERCENT    &kp PLUS   &kp RBRC  &kp LBRC  &kp AMPERSAND  &mt BSLH PIPE          &trans
                                      &trans    &trans    &trans         &trans     &trans    &trans
             >;
         };
