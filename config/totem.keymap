@@ -62,7 +62,7 @@
         mt_arrow: mt_arrow {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_ARROW";
-            bindings = <&kp>, <&make_arrow>;
+            bindings = <&kp>, <&arrowfy>;
 
             #binding-cells = <2>;
             tapping-term-ms = <190>;
@@ -71,11 +71,11 @@
     };
 
     macros {
-        make_arrow: arrow {
+        make_arrow: arrowfy {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &kp GT>;
-            label = "ARROW_SMALL";
+            label = "ARROWFY";
         };
     };
 
