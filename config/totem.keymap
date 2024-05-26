@@ -111,7 +111,7 @@
 
         fun {
             bindings = <
-        &bt BT_CLR    &bt BT_SEL 0  &trans               &trans           &trans    &trans  &trans           &kp PRINTSCREEN  &kp F11  &kp F12
+        &bt BT_CLR    &bt BT_SEL 0  &BT_SEL 1            &trans           &trans    &trans  &trans           &kp PRINTSCREEN  &kp F11  &kp F12
         &kp F1        &kp F2        &mt LEFT_CONTROL F3  &mt LEFT_ALT F4  &trans    &trans  &mt LEFT_ALT F7  &mt LCTRL F8     &kp F9   &kp F10
 &trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_MUTE           &mt LGUI F5      &trans    &trans  &mt RGUI F6      &trans           &trans   &trans   &trans
                                     &trans               &trans           &trans    &trans  &trans           &trans
