@@ -86,7 +86,7 @@
             layers = <0 1 2>;
         };
 
-        fl 
+        fl {
             bindings = <&fl>;
             key-positions = <16 17>;
             timeout-ms = <28>;
